@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habit Tracker v0</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📝</text></svg>">
+
+
+</head>
+<body>
+
+    <div id="splash">
+        <div id="splash-content">
+            <span id="splash-icon">🪷</span>
+            <p id="splash-title">Habit Tracker</p>
+            <p id="splash-greeting"></p>
+        </div>
+    </div>
+
+    <div id="tracker">
+    
+    <div class="header" id="myHeadr">
+    <h1>Habit Tracker</h1>
+
+    <!-- Greeting Section-->
+     <p id="greeting" class="greeting">Placeholder</p>
+     </div>
+
+    <!-- Navigation Section -->
+     <div class="week-nav">
+        <button id="prev-week">⇐ Prev</button>
+        <span id="week-label"></span>
+        <button id="next-week">Next ⇒</button>
+     </div>
+
+    <!-- Section Headers --> 
+        <div class="habit-row" id="day-headers">
+            <span class="habit-name"></span>
+            <div class="day-label"></div>
+            <div class="day-label"></div>
+            <div class="day-label"></div>
+            <div class="day-label"></div>
+            <div class="day-label"></div>
+            <div class="day-label"></div>
+            <div class="day-label"></div>
+        </div>
+    
+    <div class="group" id="daily-anchors">
+        <!-- Grouped Section -->
+        
+        <h3 class="group-titles" style="color: #c4846a;" >Daily Achors</h3>
+
+        <!-- Each section's habit has it's own row -->
+        <div class="habit-row">
+            <span class="habit-name">Hydration</span>
+            <div class="cell" data-id="daily-anchors-1-1"></div>
+            <div class="cell" data-id="daily-anchors-1-2"></div>
+            <div class="cell" data-id="daily-anchors-1-3"></div>
+            <div class="cell" data-id="daily-anchors-1-4"></div>
+            <div class="cell" data-id="daily-anchors-1-5"></div>
+            <div class="cell" data-id="daily-anchors-1-6"></div>
+            <div class="cell" data-id="daily-anchors-1-7"></div>
+        </div>
+
+        <div class="habit-row">
+            <span class="habit-name">Physical Apperance</span>
+            <div class="cell" data-id="daily-anchors-2-1"></div>
+            <div class="cell" data-id="daily-anchors-2-2"></div>
+            <div class="cell" data-id="daily-anchors-2-3"></div>
+            <div class="cell" data-id="daily-anchors-2-4"></div>
+            <div class="cell" data-id="daily-anchors-2-5"></div>
+            <div class="cell" data-id="daily-anchors-2-6"></div>
+            <div class="cell" data-id="daily-anchors-2-7"></div>
+        </div>
+
+        <div class="habit-row">
+            <span class="habit-name">Body Maintenance</span>
+            <div class="cell" data-id="daily-anchors-3-1"></div>
+            <div class="cell" data-id="daily-anchors-3-2"></div>
+            <div class="cell" data-id="daily-anchors-3-3"></div>
+            <div class="cell" data-id="daily-anchors-3-4"></div>
+            <div class="cell" data-id="daily-anchors-3-5"></div>
+            <div class="cell" data-id="daily-anchors-3-6"></div>
+            <div class="cell" data-id="daily-anchors-3-7"></div>
+        </div>
+
+       
+    </div> <!-- Daily Anchors | Div -->
+    <p class="border">· · ─────── ·𖥸· ─────── · ·</p> 
+
+        <div class="group" id="body-movement">
+        <!-- Grouped Section -->
+         <h3 class="group-titles" style="color: #a8b89a;">Body & Movement</h3>
+
+        <!-- Each section's habit has it's own row -->
+        <div class="habit-row" id="#body-movement">
+            <span class="habit-name">Physical Activity</span>
+            <div class="cell" data-id="daily-anchors-4-1"></div>
+            <div class="cell" data-id="daily-anchors-4-2"></div>
+            <div class="cell" data-id="daily-anchors-4-3"></div>
+            <div class="cell" data-id="daily-anchors-4-4"></div>
+            <div class="cell" data-id="daily-anchors-4-5"></div>
+            <div class="cell" data-id="daily-anchors-4-6"></div>
+            <div class="cell" data-id="daily-anchors-4-7"></div>
+        </div>
+
+        <div class="habit-row">
+            <span class="habit-name">Sunlight</span>
+            <div class="cell" data-id="daily-anchors-5-1"></div>
+            <div class="cell" data-id="daily-anchors-5-2"></div>
+            <div class="cell" data-id="daily-anchors-5-3"></div>
+            <div class="cell" data-id="daily-anchors-5-4"></div>
+            <div class="cell" data-id="daily-anchors-5-5"></div>
+            <div class="cell" data-id="daily-anchors-5-6"></div>
+            <div class="cell" data-id="daily-anchors-5-7"></div>
+        </div>
+
+        <div class="habit-row">
+            <span class="habit-name">Sleep</span>
+            <div class="cell" data-id="daily-anchors-6-1"></div>
+            <div class="cell" data-id="daily-anchors-6-2"></div>
+            <div class="cell" data-id="daily-anchors-6-3"></div>
+            <div class="cell" data-id="daily-anchors-6-4"></div>
+            <div class="cell" data-id="daily-anchors-6-5"></div>
+            <div class="cell" data-id="daily-anchors-6-6"></div>
+            <div class="cell" data-id="daily-anchors-6-7"></div>
+        </div>
+    </div> <!-- Body Movement | Div -->
+    <p class="border">· · ─────── ·𖥸· ─────── · ·</p> 
+
+        <div class="group" id="your-space">
+        <!-- Grouped Section -->
+        <h3 class="group-titles" style="color: #9aabb8;" >Your Space</h3>
+
+        <!-- Each section's habit has it's own row -->
+        <div class="habit-row">
+            <span class="habit-name">Room/Space</span>
+            <div class="cell" data-id="daily-anchors-7-1"></div>
+            <div class="cell" data-id="daily-anchors-7-2"></div>
+            <div class="cell" data-id="daily-anchors-7-3"></div>
+            <div class="cell" data-id="daily-anchors-7-4"></div>
+            <div class="cell" data-id="daily-anchors-7-5"></div>
+            <div class="cell" data-id="daily-anchors-7-6"></div>
+            <div class="cell" data-id="daily-anchors-7-7"></div>
+        </div>
+
+        <div class="habit-row">
+            <span class="habit-name">Enviornment</span>
+            <div class="cell" data-id="daily-anchors-8-1"></div>
+            <div class="cell" data-id="daily-anchors-8-2"></div>
+            <div class="cell" data-id="daily-anchors-8-3"></div>
+            <div class="cell" data-id="daily-anchors-8-4"></div>
+            <div class="cell" data-id="daily-anchors-8-5"></div>
+            <div class="cell" data-id="daily-anchors-8-6"></div>
+            <div class="cell" data-id="daily-anchors-8-7"></div>
+        </div>
+    </div> <!--Your Space | Div -->
+    <p class="border">· · ─────── ·𖥸· ─────── · ·</p> 
+
+        <div class="group" id="growth-career">
+        <!-- Grouped Section -->
+         <h3 class="group-titles" style="color: #c4a96a;" >Growth & Career</h3>
+
+        <!-- Each section's habit has it's own row -->
+        <div class="habit-row">
+            <span class="habit-name">Portfolio/Projects</span>
+            <div class="cell" data-id="daily-anchors-9-1"></div>
+            <div class="cell" data-id="daily-anchors-9-2"></div>
+            <div class="cell" data-id="daily-anchors-9-3"></div>
+            <div class="cell" data-id="daily-anchors-9-4"></div>
+            <div class="cell" data-id="daily-anchors-9-5"></div>
+            <div class="cell" data-id="daily-anchors-9-6"></div>
+            <div class="cell" data-id="daily-anchors-9-7"></div>
+        </div>
+
+        <div class="habit-row">
+            <span class="habit-name">Coursework</span>
+            <div class="cell" data-id="daily-anchors-10-1"></div>
+            <div class="cell" data-id="daily-anchors-10-2"></div>
+            <div class="cell" data-id="daily-anchors-10-3"></div>
+            <div class="cell" data-id="daily-anchors-10-4"></div>
+            <div class="cell" data-id="daily-anchors-10-5"></div>
+            <div class="cell" data-id="daily-anchors-10-6"></div>
+            <div class="cell" data-id="daily-anchors-10-7"></div>
+        </div>
+
+        <div class="habit-row">
+            <span class="habit-name">Career Development</span>
+            <div class="cell" data-id="daily-anchors-11-1"></div>
+            <div class="cell" data-id="daily-anchors-11-2"></div>
+            <div class="cell" data-id="daily-anchors-11-3"></div>
+            <div class="cell" data-id="daily-anchors-11-4"></div>
+            <div class="cell" data-id="daily-anchors-11-5"></div>
+            <div class="cell" data-id="daily-anchors-11-6"></div>
+            <div class="cell" data-id="daily-anchors-11-7"></div>
+        </div>
+    </div> <!--Growth & Career | Div-->
+    <p class="border">· · ─────── ·𖥸· ─────── · ·</p> 
+
+        <div class="group" id="intentional-joy">
+        <!-- Grouped Section -->
+         <h3 class="group-titles" style="color: #b89ab8;" >Intentional Joy</h3>
+
+        <!-- Each section's habit has it's own row -->
+        <div class="habit-row">
+            <span class="habit-name">Movies/Games</span>
+            <div class="cell" data-id="daily-anchors-12-1"></div>
+            <div class="cell" data-id="daily-anchors-12-2"></div>
+            <div class="cell" data-id="daily-anchors-12-3"></div>
+            <div class="cell" data-id="daily-anchors-12-4"></div>
+            <div class="cell" data-id="daily-anchors-12-5"></div>
+            <div class="cell" data-id="daily-anchors-12-6"></div>
+            <div class="cell" data-id="daily-anchors-12-7"></div>
+        </div>
+
+        <div class="habit-row">
+            <span class="habit-name">Creative</span>
+            <div class="cell" data-id="daily-anchors-13-1"></div>
+            <div class="cell" data-id="daily-anchors-13-2"></div>
+            <div class="cell" data-id="daily-anchors-13-3"></div>
+            <div class="cell" data-id="daily-anchors-13-4"></div>
+            <div class="cell" data-id="daily-anchors-13-5"></div>
+            <div class="cell" data-id="daily-anchors-13-6"></div>
+            <div class="cell" data-id="daily-anchors-13-7"></div>
+        </div>
+
+        <div class="habit-row">
+            <span class="habit-name">Recharge</span>
+            <div class="cell" data-id="daily-anchors-14-1"></div>
+            <div class="cell" data-id="daily-anchors-14-2"></div>
+            <div class="cell" data-id="daily-anchors-14-3"></div>
+            <div class="cell" data-id="daily-anchors-14-4"></div>
+            <div class="cell" data-id="daily-anchors-14-5"></div>
+            <div class="cell" data-id="daily-anchors-14-6"></div>
+            <div class="cell" data-id="daily-anchors-14-7"></div>
+        </div>
+    </div> <!-- Intentional Joy | Div-->
+    <p class="border">· · ─────── ·𖥸· ─────── · ·</p> 
+
+    <!-- Summary Section -->
+    <div id="summary">
+    <div id="summary-stats">
+        <span id="moments-count">0 moments</span>
+        <span id="active-days">0 active days</span>
+    </div>
+    <div id="progress-bar-container">
+        <div id="progress-bar"></div>
+    </div>
+    <p id="summary-message"></p>
+    <p id="rotating-quotes">Placeholder</p>
+    <button id="clear-week">clear this week</button>
+    </div>
+
+    </div> <!-- Tracker | Div Element -->
+
+    <!-- JS: Interactivity File -->
+    <script src="script.js"></script>
+    
+</body>
+
+<footer class="footer">
+    <p>Habit Tracker © | May 2026</p>
+</footer>
+</html>

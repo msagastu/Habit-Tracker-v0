@@ -1,0 +1,27 @@
+{
+  "name": "habit-tracker",
+  "version": "1.0.0",
+  "description": "A minimalist  habit tracker",
+  "main": "main.js",
+  "author": "msagastu",
+  "homepage": "./",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "com.msagastu.habit-tracker",
+    "mac": {
+      "category": "public.app-category.lifestyle",
+      "target": "dmg",
+      "icon": "icon.png"
+    },
+    "directories": {
+      "output": "dist"
+    }
+  },
+  "devDependencies": {
+    "electron": "^30.0.0",
+    "electron-builder": "^24.0.0"
+  }
+}
